@@ -1,0 +1,25 @@
+<form action='/import/seach/' method='get'>
+  <label for='keyword'>Keyword:</label>
+  <input type='text' name='keyword' id='keyword'></input>
+
+  <br><br>
+
+  <label for='count'>Number of recipes:</label>
+  <input type='number' min='1' max='50' name='count' id='count' value='5'></input>
+
+  <br><br>
+
+  <label for='diff'>Difficulty filter:</label>
+  <input list='difficulties' name='diff' id='diff' value='All'></input>
+
+  <br><br>
+
+  <datalist id='difficulties'>
+    <option value='All'>
+    <option value='Very easy'>
+    <option value='Easy'>
+    <option value='Moderate'>
+    <option value='Difficult'>
+  </datalist>
+  <input type='submit' value='Search recipe!'></input>
+</form>
